@@ -10,10 +10,10 @@ mnist=input_data.read_data_sets('MNIST_data',one_hot=True)
 #dimensions of the windows
 
 W_conv1_weight_variable_dim=[5,5,1,32]
-b_conv1_bias_variable_dim=W_conv1_weight_variable_dim[-1]
+b_conv1_bias_variable_dim=32
 
 W_conv2_weigth_variable_dim=[5, 5, 32, 64]
-b_conv2_bias_variable_dim=W_conv2_weigth_variable_dim[-1]
+b_conv2_bias_variable_dim=64
 
 
 #----------------------------------------------#
