@@ -60,7 +60,7 @@ def routine():
     W_conv3=weight_variable(W_conv3_weight_variable_dim)
     b_conv3=bias_variable(b_conv3_bias_variable_dim)
     
-    h_conv3=tf.nn.relu(conv2d(h_pool2,W_con3)+b_conv3)
+    h_conv3=tf.nn.relu(conv2d(h_pool2,W_conv3)+b_conv3)
     h_pool3=max_pool_2x2(h_conv3)
 
 
