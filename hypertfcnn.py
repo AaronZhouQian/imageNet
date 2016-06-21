@@ -85,8 +85,6 @@ def routine():
 def main():
 #The hyperparameters 
 #dimensions of the windows
-
-    [filter_height, filter_width, in_channels, channel_multiplier]
     
     W_conv1_weight_variable_dim=[5,5,1,32]
     b_conv1_bias_variable_dim=[32]
