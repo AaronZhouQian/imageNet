@@ -78,13 +78,11 @@ def routine():
 
     sess.run(tf.initialize_all_variables())
     for i in range(20000):
-      batch = mnist.train.next_batch(50)
-      if i%100 == 0:
-        train_accuracy = accuracy.eval(feed_dict={
-            x:batch[0], y_: batch[1], keep_prob: 1.0})
-        print("step %d, training accuracy %g"%(i, train_accuracy))
+        batch = mnist.train.next_batch(50)
+        if i%100 == 0:
+          train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
+          print("step %d, training accuracy %g"%(i, train_accuracy))
     
-      with tf.device('/gpu:0'):
         train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 
     print("test accuracy %g"%accuracy.eval(feed_dict={
