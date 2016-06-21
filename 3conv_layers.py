@@ -14,7 +14,7 @@ W_conv2_weight_variable_dim=[5, 5, 32, 64]
 b_conv2_bias_variable_dim=[64]
 
 W_conv3_weight_variable_dim=[5,5,64,64]
-b_conv3_bias_variable_dim[64]
+b_conv3_bias_variable_dim=[64]
 
 def weight_variable(shape):
   initial = tf.truncated_normal(shape, stddev=0.1)
