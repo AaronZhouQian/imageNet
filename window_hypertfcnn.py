@@ -76,7 +76,7 @@ def routine(W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 32, 64],b2_dim=[64]):
     sess.run(tf.initialize_all_variables())
     for i in range(20000):
         batch = mnist.train.next_batch(50)
-        if i%100 == 0:
+        if i%1000 == 0:
             train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
             print("step %d, training accuracy %g"%(i, train_accuracy))
         
@@ -87,9 +87,10 @@ def routine(W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 32, 64],b2_dim=[64]):
 
 
 def main():
+    for n in [3,4,5,6,7]:
+        routine(W1_dim=[n,n,1,32],b1_dim=[32],W2_dim=[n, n, 32, 64],b2_dim=[64])
+        print("the window dimension is %d by %d" %(n,n))
 
-#call the train/test model routine
-    routine()
 
 if __name__ == '__main__':
   main()
