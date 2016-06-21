@@ -78,7 +78,7 @@ def routine(W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 32, 64],b2_dim=[64]):
         batch = mnist.train.next_batch(50)
         if i%100 == 0:
             train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
-        print("step %d, training accuracy %g"%(i, train_accuracy))
+            print("step %d, training accuracy %g"%(i, train_accuracy))
         
         train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 
