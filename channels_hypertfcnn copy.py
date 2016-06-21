@@ -51,7 +51,7 @@ def routine(W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 32, 64],b2_dim=[64]):
 
 
     #Densely Connected Layer
-    W_fc1 = weight_variable([7 * 7 * 64, 1024])
+    W_fc1 = weight_variable([7 * 7 * b2_dim[0], 1024])
     b_fc1 = bias_variable([1024])
 
     h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])
