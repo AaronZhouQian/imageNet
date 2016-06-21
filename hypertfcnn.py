@@ -4,6 +4,15 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 mnist=input_data.read_data_sets('MNIST_data',one_hot=True)
 
+#The hyperparameters 
+#dimensions of the windows
+
+W_conv1_weight_variable_dim=[5,5,1,32]
+b_conv1_bias_variable_dim=[32]
+
+W_conv2_weight_variable_dim=[5, 5, 32, 64]
+b_conv2_bias_variable_dim=[64]
+
 def weight_variable(shape):
   initial = tf.truncated_normal(shape, stddev=0.1)
   return tf.Variable(initial)
@@ -83,14 +92,7 @@ def routine():
 
 
 def main():
-#The hyperparameters 
-#dimensions of the windows
-    
-    W_conv1_weight_variable_dim=[5,5,1,32]
-    b_conv1_bias_variable_dim=[32]
 
-    W_conv2_weight_variable_dim=[5, 5, 32, 64]
-    b_conv2_bias_variable_dim=[64]
 
 #call the train/test model routine
     routine()
