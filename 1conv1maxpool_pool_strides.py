@@ -57,7 +57,7 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
     #the first division is the number of pixels in the width/height of
     #the output of the conv layer while the second division gives those
     #in the output after the max pooling
-    output_img_dim=int(math.ceil(float(28)/conv2d_stride_length)/2)
+    output_img_dim=int(math.ceil(math.ceil(float(28)/conv2d_stride_length)/2))
     W_fc1 = weight_variable([output_img_dim * output_img_dim * b1_dim[0], 1024])
     b_fc1 = bias_variable([1024])
 
