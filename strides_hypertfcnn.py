@@ -22,7 +22,7 @@ def conv2d(x,W,stride_length=1):
 def max_pool_2x2(x):
     return tf.nn.max_pool(x,ksize=[1,2,2,1],strides=[1,2,2,1],padding='SAME')
 
-def routine(conv2d_stride_length=1,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 32, 64],b2_dim=[64]):
+def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 32, 64],b2_dim=[64]):
     sess=tf.InteractiveSession()
     W_conv1_weight_variable_dim = W1_dim
     b_conv1_bias_variable_dim = b1_dim
