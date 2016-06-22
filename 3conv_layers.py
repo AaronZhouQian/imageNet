@@ -2,6 +2,7 @@
 import numpy as np
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
+from collections import deque
 mnist=input_data.read_data_sets('MNIST_data',one_hot=True)
 
 #conv -> pool -> conv -> pool -> conv 
@@ -86,10 +87,14 @@ def routine():
     accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
     sess.run(tf.initialize_all_variables())
+    
+    #a list of the four most recent accuracies
+    train_accuracies=[]
     for i in range(20000):
         batch = mnist.train.next_batch(50)
         if i%100 == 0:
             train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
+            train_accuracies.append(train_accuracy)
             print("step %d, training accuracy %g"%(i, train_accuracy))
     
         train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
