@@ -40,10 +40,11 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
     b_conv1=bias_variable(b_conv1_bias_variable_dim)
 
     h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1, conv2d_stride_length) + b_conv1)
-    h_pool1 = max_pool_2x2(h_conv1)
+    #h_pool1 = max_pool_2x2(h_conv1)
+    h_pool1=h_conv1
 
 
-    #second layer
+     #second layer
 #    W_conv2 = weight_variable(W_conv2_weight_variable_dim)
 #    b_conv2 = bias_variable(b_conv2_bias_variable_dim)
 
@@ -55,7 +56,7 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
     #the first division is the number of pixels in the width/height of
     #the output of the conv layer while the second division gives those
     #in the output after the max pooling
-    output_img_dim=(28/conv2d_stride_length)/2
+    output_img_dim=(28/conv2d_stride_length)
     W_fc1 = weight_variable([output_img_dim * output_img_dim * b1_dim[0], 1024])
     b_fc1 = bias_variable([1024])
 
