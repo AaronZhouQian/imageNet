@@ -5,8 +5,8 @@ from tensorflow.examples.tutorials.mnist import input_data
 mnist=input_data.read_data_sets('MNIST_data',one_hot=True)
 
 #The hyperparameters 
-#dimensions of the windows
-
+#strides for the max pooling layer is 2 in this case
+#we only use 1 convolution layer and 1 max pooling layer
 
 def weight_variable(shape):
   initial = tf.truncated_normal(shape, stddev=0.1)
