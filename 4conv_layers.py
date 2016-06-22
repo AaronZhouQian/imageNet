@@ -66,7 +66,7 @@ def routine():
     
     #fourth layer
     W_conv4=weight_variable(W_conv4_weight_variable_dim)
-    b_con4=bias_variable(b_conv4_bias_variable_dim)
+    b_conv4=bias_variable(b_conv4_bias_variable_dim)
     
     h_conv4=tf.nn.relu(conv2d(h_conv3,W_conv4)+b_conv4)
     
