@@ -86,9 +86,7 @@ def routine(conv2d_stride_length=1,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
 
 
 def main():
-    for n in [3,4,5,6,7]:
-        routine(W1_dim=[n,n,1,32],b1_dim=[32],W2_dim=[n, n, 32, 64],b2_dim=[64])
-        print("the window dimension is %d by %d" %(n,n))
+    routine()
 
 
 if __name__ == '__main__':
