@@ -92,8 +92,8 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
 
 def main():
     for c2stride_length in [3,4,5,6]:
-        routine(conv2d_stride_length=2)
-        print("the conv2d_stride_length is %d" %conv2d_stride_length)
+        routine(conv2d_stride_length=c2stride_length)
+        print("the conv2d_stride_length is %d" %c2stride_length)
 
 
 if __name__ == '__main__':
