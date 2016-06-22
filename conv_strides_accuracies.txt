@@ -1,0 +1,280 @@
+Extracting MNIST_data/train-images-idx3-ubyte.gz
+Extracting MNIST_data/train-labels-idx1-ubyte.gz
+Extracting MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
+step 0, training accuracy 0.12
+step 1000, training accuracy 0.92
+step 2000, training accuracy 1
+step 3000, training accuracy 1
+step 4000, training accuracy 1
+step 5000, training accuracy 0.98
+step 6000, training accuracy 0.96
+step 7000, training accuracy 1
+step 8000, training accuracy 1
+step 9000, training accuracy 0.98
+step 10000, training accuracy 0.98
+step 11000, training accuracy 1
+step 12000, training accuracy 0.96
+step 13000, training accuracy 0.98
+step 14000, training accuracy 0.98
+step 15000, training accuracy 1
+step 16000, training accuracy 1
+step 17000, training accuracy 0.98
+step 18000, training accuracy 1
+step 19000, training accuracy 0.98
+test accuracy 0.9886
+iteration number 1 for conv2d_stride_length = 2
+current time is: Wed Jun 22 11:50:02 2016
+step 0, training accuracy 0.08
+step 1000, training accuracy 0.96
+step 2000, training accuracy 0.9
+step 3000, training accuracy 0.92
+step 4000, training accuracy 0.98
+step 5000, training accuracy 0.96
+step 6000, training accuracy 0.94
+step 7000, training accuracy 1
+step 8000, training accuracy 0.98
+step 9000, training accuracy 1
+step 10000, training accuracy 1
+step 11000, training accuracy 1
+step 12000, training accuracy 1
+step 13000, training accuracy 1
+step 14000, training accuracy 1
+step 15000, training accuracy 1
+step 16000, training accuracy 1
+step 17000, training accuracy 0.98
+step 18000, training accuracy 0.96
+step 19000, training accuracy 0.96
+test accuracy 0.9886
+iteration number 2 for conv2d_stride_length = 2
+current time is: Wed Jun 22 11:51:21 2016
+step 0, training accuracy 0.06
+step 1000, training accuracy 0.88
+step 2000, training accuracy 0.9
+step 3000, training accuracy 0.98
+step 4000, training accuracy 1
+step 5000, training accuracy 0.96
+step 6000, training accuracy 1
+step 7000, training accuracy 1
+step 8000, training accuracy 1
+step 9000, training accuracy 1
+step 10000, training accuracy 1
+step 11000, training accuracy 1
+step 12000, training accuracy 1
+step 13000, training accuracy 1
+step 14000, training accuracy 1
+step 15000, training accuracy 1
+step 16000, training accuracy 1
+step 17000, training accuracy 1
+step 18000, training accuracy 1
+step 19000, training accuracy 1
+test accuracy 0.9908
+iteration number 3 for conv2d_stride_length = 2
+current time is: Wed Jun 22 11:52:38 2016
+step 0, training accuracy 0.18
+step 1000, training accuracy 0.88
+step 2000, training accuracy 0.9
+step 3000, training accuracy 0.98
+step 4000, training accuracy 1
+step 5000, training accuracy 0.96
+step 6000, training accuracy 0.92
+step 7000, training accuracy 0.98
+step 8000, training accuracy 0.98
+step 9000, training accuracy 0.98
+step 10000, training accuracy 1
+step 11000, training accuracy 1
+step 12000, training accuracy 1
+step 13000, training accuracy 0.94
+step 14000, training accuracy 0.98
+step 15000, training accuracy 1
+step 16000, training accuracy 0.98
+step 17000, training accuracy 1
+step 18000, training accuracy 1
+step 19000, training accuracy 1
+test accuracy 0.9847
+iteration number 1 for conv2d_stride_length = 3
+current time is: Wed Jun 22 11:53:56 2016
+step 0, training accuracy 0.1
+step 1000, training accuracy 0.94
+step 2000, training accuracy 0.92
+step 3000, training accuracy 0.94
+step 4000, training accuracy 1
+step 5000, training accuracy 0.96
+step 6000, training accuracy 1
+step 7000, training accuracy 1
+step 8000, training accuracy 0.98
+step 9000, training accuracy 1
+step 10000, training accuracy 0.96
+step 11000, training accuracy 1
+step 12000, training accuracy 1
+step 13000, training accuracy 1
+step 14000, training accuracy 1
+step 15000, training accuracy 0.96
+step 16000, training accuracy 1
+step 17000, training accuracy 0.98
+step 18000, training accuracy 1
+step 19000, training accuracy 0.98
+test accuracy 0.9854
+iteration number 2 for conv2d_stride_length = 3
+current time is: Wed Jun 22 11:55:14 2016
+step 0, training accuracy 0.08
+step 1000, training accuracy 0.84
+step 2000, training accuracy 0.88
+step 3000, training accuracy 0.92
+step 4000, training accuracy 1
+step 5000, training accuracy 0.94
+step 6000, training accuracy 0.98
+step 7000, training accuracy 0.96
+step 8000, training accuracy 0.98
+step 9000, training accuracy 1
+step 10000, training accuracy 0.96
+step 11000, training accuracy 1
+step 12000, training accuracy 1
+step 13000, training accuracy 0.98
+step 14000, training accuracy 0.96
+step 15000, training accuracy 1
+step 16000, training accuracy 1
+step 17000, training accuracy 1
+step 18000, training accuracy 1
+step 19000, training accuracy 0.98
+test accuracy 0.9867
+iteration number 3 for conv2d_stride_length = 3
+current time is: Wed Jun 22 11:56:33 2016
+step 0, training accuracy 0.06
+step 1000, training accuracy 0.92
+step 2000, training accuracy 0.94
+step 3000, training accuracy 0.94
+step 4000, training accuracy 0.98
+step 5000, training accuracy 0.98
+step 6000, training accuracy 0.98
+step 7000, training accuracy 0.94
+step 8000, training accuracy 0.96
+step 9000, training accuracy 0.94
+step 10000, training accuracy 0.98
+step 11000, training accuracy 0.96
+step 12000, training accuracy 0.96
+step 13000, training accuracy 1
+step 14000, training accuracy 0.96
+step 15000, training accuracy 1
+step 16000, training accuracy 0.98
+step 17000, training accuracy 0.98
+step 18000, training accuracy 0.96
+step 19000, training accuracy 1
+test accuracy 0.9746
+iteration number 1 for conv2d_stride_length = 4
+current time is: Wed Jun 22 11:57:51 2016
+step 0, training accuracy 0.1
+step 1000, training accuracy 0.82
+step 2000, training accuracy 0.94
+step 3000, training accuracy 0.88
+step 4000, training accuracy 0.9
+step 5000, training accuracy 0.94
+step 6000, training accuracy 0.98
+step 7000, training accuracy 0.98
+step 8000, training accuracy 0.96
+step 9000, training accuracy 0.98
+step 10000, training accuracy 0.96
+step 11000, training accuracy 0.98
+step 12000, training accuracy 1
+step 13000, training accuracy 0.96
+step 14000, training accuracy 1
+step 15000, training accuracy 0.96
+step 16000, training accuracy 0.94
+step 17000, training accuracy 0.98
+step 18000, training accuracy 0.98
+step 19000, training accuracy 0.98
+test accuracy 0.9738
+iteration number 2 for conv2d_stride_length = 4
+current time is: Wed Jun 22 11:59:09 2016
+step 0, training accuracy 0.04
+step 1000, training accuracy 0.88
+step 2000, training accuracy 0.94
+step 3000, training accuracy 0.92
+step 4000, training accuracy 0.94
+step 5000, training accuracy 0.96
+step 6000, training accuracy 0.98
+step 7000, training accuracy 0.94
+step 8000, training accuracy 0.98
+step 9000, training accuracy 0.98
+step 10000, training accuracy 0.94
+step 11000, training accuracy 0.98
+step 12000, training accuracy 0.94
+step 13000, training accuracy 0.98
+step 14000, training accuracy 0.96
+step 15000, training accuracy 1
+step 16000, training accuracy 1
+step 17000, training accuracy 1
+step 18000, training accuracy 0.98
+step 19000, training accuracy 0.98
+test accuracy 0.9744
+iteration number 3 for conv2d_stride_length = 4
+current time is: Wed Jun 22 12:00:28 2016
+step 0, training accuracy 0.12
+step 1000, training accuracy 0.72
+step 2000, training accuracy 0.94
+step 3000, training accuracy 0.88
+step 4000, training accuracy 0.96
+step 5000, training accuracy 0.96
+step 6000, training accuracy 0.92
+step 7000, training accuracy 0.94
+step 8000, training accuracy 0.86
+step 9000, training accuracy 0.96
+step 10000, training accuracy 0.92
+step 11000, training accuracy 0.98
+step 12000, training accuracy 0.92
+step 13000, training accuracy 0.96
+step 14000, training accuracy 0.98
+step 15000, training accuracy 0.96
+step 16000, training accuracy 0.98
+step 17000, training accuracy 0.96
+step 18000, training accuracy 1
+step 19000, training accuracy 0.98
+test accuracy 0.9634
+iteration number 1 for conv2d_stride_length = 5
+current time is: Wed Jun 22 12:01:47 2016
+step 0, training accuracy 0.02
+step 1000, training accuracy 0.64
+step 2000, training accuracy 0.92
+step 3000, training accuracy 0.92
+step 4000, training accuracy 0.92
+step 5000, training accuracy 0.94
+step 6000, training accuracy 0.96
+step 7000, training accuracy 0.96
+step 8000, training accuracy 0.94
+step 9000, training accuracy 1
+step 10000, training accuracy 0.92
+step 11000, training accuracy 0.94
+step 12000, training accuracy 0.96
+step 13000, training accuracy 0.96
+step 14000, training accuracy 0.92
+step 15000, training accuracy 0.98
+step 16000, training accuracy 0.98
+step 17000, training accuracy 0.98
+step 18000, training accuracy 0.94
+step 19000, training accuracy 0.96
+test accuracy 0.9612
+iteration number 2 for conv2d_stride_length = 5
+current time is: Wed Jun 22 12:03:07 2016
+step 0, training accuracy 0.12
+step 1000, training accuracy 0.92
+step 2000, training accuracy 0.92
+step 3000, training accuracy 0.92
+step 4000, training accuracy 0.92
+step 5000, training accuracy 0.9
+step 6000, training accuracy 0.9
+step 7000, training accuracy 0.98
+step 8000, training accuracy 0.98
+step 9000, training accuracy 0.94
+step 10000, training accuracy 0.96
+step 11000, training accuracy 0.9
+step 12000, training accuracy 0.98
+step 13000, training accuracy 0.94
+step 14000, training accuracy 0.9
+step 15000, training accuracy 0.94
+step 16000, training accuracy 0.96
+step 17000, training accuracy 0.96
+step 18000, training accuracy 1
+step 19000, training accuracy 0.96
+test accuracy 0.9594
+iteration number 3 for conv2d_stride_length = 5
+current time is: Wed Jun 22 12:04:26 2016
