@@ -86,7 +86,7 @@ def routine():
     accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 
     sess.run(tf.initialize_all_variables())
-    training_accuracy_queue=deque[]
+    training_accuracy_queue=deque()
     for i in range(3000):
         batch = mnist.train.next_batch(50)
         if i%1000 == 0:
