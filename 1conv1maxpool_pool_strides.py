@@ -40,7 +40,8 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
     b_conv1=bias_variable(b_conv1_bias_variable_dim)
 
     h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1, conv2d_stride_length) + b_conv1)
-    h_pool1 = max_pool_2x2(h_conv1)
+   # h_pool1 = max_pool_2x2(h_conv1)
+   h_pool1=h_conv1
 
     #second layer
 #    W_conv2 = weight_variable(W_conv2_weight_variable_dim)
@@ -51,7 +52,8 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
 
 
     #Densely Connected Layer
-    W_fc1 = weight_variable([7 * 7 * b1_dim[0], 1024])
+    output_img_dim=28/conv2d_stride_length
+    W_fc1 = weight_variable([output_img_dim * output_img_dim * b1_dim[0], 1024])
     b_fc1 = bias_variable([1024])
 
     h_pool1_flat = tf.reshape(h_pool1, [-1, 7*7*b1_dim[0]])
