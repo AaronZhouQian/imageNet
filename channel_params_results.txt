@@ -1474,3 +1474,5 @@ step 19000, training accuracy 0.14
 test accuracy 0.098
 number of channels in the first layer is 128
 number of channles in the second layer is 128
+
+
