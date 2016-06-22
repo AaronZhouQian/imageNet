@@ -94,9 +94,10 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
 
 def main():
     for c2stride_length in [2,3,4,5,6]:
-        routine(conv2d_stride_length=c2stride_length)
-        print("the conv2d_stride_length is %d" %c2stride_length)
-        print("current time is: %s" %time.ctime())
+        for counter in range(3):
+            routine(conv2d_stride_length=c2stride_length)
+            print("the conv2d_stride_length is %d" %c2stride_length)
+            print("current time is: %s" %time.ctime())
 
 if __name__ == '__main__':
   main()
