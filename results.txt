@@ -1,0 +1,255 @@
+test accuracy 0.9698
+number of channels in the first layer is 1
+number of channles in the second layer is 1
+--
+test accuracy 0.9748
+number of channels in the first layer is 1
+number of channles in the second layer is 2
+--
+test accuracy 0.983
+number of channels in the first layer is 1
+number of channles in the second layer is 4
+--
+test accuracy 0.9826
+number of channels in the first layer is 1
+number of channles in the second layer is 8
+--
+test accuracy 0.988
+number of channels in the first layer is 1
+number of channles in the second layer is 16
+--
+test accuracy 0.9893
+number of channels in the first layer is 1
+number of channles in the second layer is 32
+--
+test accuracy 0.9838
+number of channels in the first layer is 1
+number of channles in the second layer is 64
+--
+test accuracy 0.9885
+number of channels in the first layer is 1
+number of channles in the second layer is 128
+--
+test accuracy 0.9658
+number of channels in the first layer is 2
+number of channles in the second layer is 1
+--
+test accuracy 0.9811
+number of channels in the first layer is 2
+number of channles in the second layer is 2
+--
+test accuracy 0.9833
+number of channels in the first layer is 2
+number of channles in the second layer is 4
+--
+test accuracy 0.9875
+number of channels in the first layer is 2
+number of channles in the second layer is 8
+--
+test accuracy 0.9881
+number of channels in the first layer is 2
+number of channles in the second layer is 16
+--
+test accuracy 0.99
+number of channels in the first layer is 2
+number of channles in the second layer is 32
+--
+test accuracy 0.9912
+number of channels in the first layer is 2
+number of channles in the second layer is 64
+--
+test accuracy 0.99
+number of channels in the first layer is 2
+number of channles in the second layer is 128
+--
+test accuracy 0.9757
+number of channels in the first layer is 4
+number of channles in the second layer is 1
+--
+test accuracy 0.9801
+number of channels in the first layer is 4
+number of channles in the second layer is 2
+--
+test accuracy 0.9884
+number of channels in the first layer is 4
+number of channles in the second layer is 4
+--
+test accuracy 0.9876
+number of channels in the first layer is 4
+number of channles in the second layer is 8
+--
+test accuracy 0.9896
+number of channels in the first layer is 4
+number of channles in the second layer is 16
+--
+test accuracy 0.99
+number of channels in the first layer is 4
+number of channles in the second layer is 32
+--
+test accuracy 0.9913
+number of channels in the first layer is 4
+number of channles in the second layer is 64
+--
+test accuracy 0.9918
+number of channels in the first layer is 4
+number of channles in the second layer is 128
+--
+test accuracy 0.9793
+number of channels in the first layer is 8
+number of channles in the second layer is 1
+--
+test accuracy 0.9814
+number of channels in the first layer is 8
+number of channles in the second layer is 2
+--
+test accuracy 0.9894
+number of channels in the first layer is 8
+number of channles in the second layer is 4
+--
+test accuracy 0.9896
+number of channels in the first layer is 8
+number of channles in the second layer is 8
+--
+test accuracy 0.992
+number of channels in the first layer is 8
+number of channles in the second layer is 16
+--
+test accuracy 0.9916
+number of channels in the first layer is 8
+number of channles in the second layer is 32
+--
+test accuracy 0.9916
+number of channels in the first layer is 8
+number of channles in the second layer is 64
+--
+test accuracy 0.9908
+number of channels in the first layer is 8
+number of channles in the second layer is 128
+--
+test accuracy 0.9795
+number of channels in the first layer is 16
+number of channles in the second layer is 1
+--
+test accuracy 0.9861
+number of channels in the first layer is 16
+number of channles in the second layer is 2
+--
+test accuracy 0.9883
+number of channels in the first layer is 16
+number of channles in the second layer is 4
+--
+test accuracy 0.9908
+number of channels in the first layer is 16
+number of channles in the second layer is 8
+--
+test accuracy 0.9923
+number of channels in the first layer is 16
+number of channles in the second layer is 16
+--
+test accuracy 0.9917
+number of channels in the first layer is 16
+number of channles in the second layer is 32
+--
+test accuracy 0.9913
+number of channels in the first layer is 16
+number of channles in the second layer is 64
+--
+test accuracy 0.9911
+number of channels in the first layer is 16
+number of channles in the second layer is 128
+--
+test accuracy 0.9805
+number of channels in the first layer is 32
+number of channles in the second layer is 1
+--
+test accuracy 0.9875
+number of channels in the first layer is 32
+number of channles in the second layer is 2
+--
+test accuracy 0.9905
+number of channels in the first layer is 32
+number of channles in the second layer is 4
+--
+test accuracy 0.991
+number of channels in the first layer is 32
+number of channles in the second layer is 8
+--
+test accuracy 0.9905
+number of channels in the first layer is 32
+number of channles in the second layer is 16
+--
+test accuracy 0.9917
+number of channels in the first layer is 32
+number of channles in the second layer is 32
+--
+test accuracy 0.9909
+number of channels in the first layer is 32
+number of channles in the second layer is 64
+--
+test accuracy 0.992
+number of channels in the first layer is 32
+number of channles in the second layer is 128
+--
+test accuracy 0.9815
+number of channels in the first layer is 64
+number of channles in the second layer is 1
+--
+test accuracy 0.9872
+number of channels in the first layer is 64
+number of channles in the second layer is 2
+--
+test accuracy 0.9897
+number of channels in the first layer is 64
+number of channles in the second layer is 4
+--
+test accuracy 0.9924
+number of channels in the first layer is 64
+number of channles in the second layer is 8
+--
+test accuracy 0.9907
+number of channels in the first layer is 64
+number of channles in the second layer is 16
+--
+test accuracy 0.9915
+number of channels in the first layer is 64
+number of channles in the second layer is 32
+--
+test accuracy 0.9916
+number of channels in the first layer is 64
+number of channles in the second layer is 64
+--
+test accuracy 0.9923
+number of channels in the first layer is 64
+number of channles in the second layer is 128
+--
+test accuracy 0.9852
+number of channels in the first layer is 128
+number of channles in the second layer is 1
+--
+test accuracy 0.9892
+number of channels in the first layer is 128
+number of channles in the second layer is 2
+--
+test accuracy 0.9917
+number of channels in the first layer is 128
+number of channles in the second layer is 4
+--
+test accuracy 0.9914
+number of channels in the first layer is 128
+number of channles in the second layer is 8
+--
+test accuracy 0.9931
+number of channels in the first layer is 128
+number of channles in the second layer is 16
+--
+test accuracy 0.9919
+number of channels in the first layer is 128
+number of channles in the second layer is 32
+--
+test accuracy 0.9917
+number of channels in the first layer is 128
+number of channles in the second layer is 64
+--
+test accuracy 0.098
+number of channels in the first layer is 128
+number of channles in the second layer is 128
