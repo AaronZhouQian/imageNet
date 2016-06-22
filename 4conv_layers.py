@@ -59,16 +59,16 @@ def routine():
     h_pool2 = max_pool_2x2(h_conv2)
     
     #third layer
-    W_conv3=weight_variable(W_conv3_weight_variable_dim)
-    b_conv3=bias_variable(b_conv3_bias_variable_dim)
+    W_conv3 = weight_variable(W_conv3_weight_variable_dim)
+    b_conv3 = bias_variable(b_conv3_bias_variable_dim)
     
-    h_conv3=tf.nn.relu(conv2d(h_pool2,W_conv3)+b_conv3)
+    h_conv3 = tf.nn.relu(conv2d(h_pool2,W_conv3)+b_conv3)
     
     #fourth layer
-    W_conv4=weight_variable(W_conv4_weight_variable_dim)
-    b_conv4=bias_variable(b_conv4_bias_variable_dim)
+    W_conv4 = weight_variable(W_conv4_weight_variable_dim)
+    b_conv4 = bias_variable(b_conv4_bias_variable_dim)
     
-    h_conv4=tf.nn.relu(conv2d(h_conv3,W_conv4)+b_conv4)
+    h_conv4 = tf.nn.relu(conv2d(h_conv3,W_conv4)+b_conv4)
     
 
 
@@ -76,8 +76,8 @@ def routine():
     W_fc1 = weight_variable([7 * 7 * 64, 1024])
     b_fc1 = bias_variable([1024])
 
-    h_conv3_flat = tf.reshape(h_conv4, [-1, 7*7*64])
-    h_fc1 = tf.nn.relu(tf.matmul(h_conv3_flat, W_fc1) + b_fc1)
+    h_conv4_flat = tf.reshape(h_conv4, [-1, 7*7*64])
+    h_fc1 = tf.nn.relu(tf.matmul(h_conv4_flat, W_fc1) + b_fc1)
 
     #dropout
     keep_prob = tf.placeholder(tf.float32)
