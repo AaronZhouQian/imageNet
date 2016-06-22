@@ -52,7 +52,10 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
 
 
     #Densely Connected Layer
-    output_img_dim=28/conv2d_stride_length/2
+    #the first division is the number of pixels in the width/height of
+    #the output of the conv layer while the second division gives those
+    #in the output after the max pooling
+    output_img_dim=(28/conv2d_stride_length)/2
     W_fc1 = weight_variable([output_img_dim * output_img_dim * b1_dim[0], 1024])
     b_fc1 = bias_variable([1024])
 
@@ -88,7 +91,9 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
 
 
 def main():
-    routine()
+    for c2stride_length in [3,4,5,6]
+        routine(conv2d_stride_length=2)
+        print("the conv2d_stride_length is %d" %conv2d_stride_length)
 
 
 if __name__ == '__main__':
