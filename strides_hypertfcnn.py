@@ -43,19 +43,19 @@ def routine(conv2d_stride_length=1,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
     h_pool1 = max_pool_2x2(h_conv1)
 
     #second layer
-    W_conv2 = weight_variable(W_conv2_weight_variable_dim)
-    b_conv2 = bias_variable(b_conv2_bias_variable_dim)
+#    W_conv2 = weight_variable(W_conv2_weight_variable_dim)
+#    b_conv2 = bias_variable(b_conv2_bias_variable_dim)
 
-    h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2, conv2d_stride_length) + b_conv2)
-    h_pool2 = max_pool_2x2(h_conv2)
+#    h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2, conv2d_stride_length) + b_conv2)
+#    h_pool2 = max_pool_2x2(h_conv2)
 
 
     #Densely Connected Layer
-    W_fc1 = weight_variable([7 * 7 * 64, 1024])
+    W_fc1 = weight_variable([7 * 7 * b1_dim[0], 1024])
     b_fc1 = bias_variable([1024])
 
-    h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])
-    h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
+    h_pool1_flat = tf.reshape(h_pool1, [-1, 7*7*b1_dim[0]])
+    h_fc1 = tf.nn.relu(tf.matmul(h_pool1_flat, W_fc1) + b_fc1)
 
     #dropout
     keep_prob = tf.placeholder(tf.float32)
