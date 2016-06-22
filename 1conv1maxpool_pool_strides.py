@@ -56,7 +56,7 @@ def routine(conv2d_stride_length=2,W1_dim=[5,5,1,32],b1_dim=[32],W2_dim=[5, 5, 3
     W_fc1 = weight_variable([output_img_dim * output_img_dim * b1_dim[0], 1024])
     b_fc1 = bias_variable([1024])
 
-    h_pool1_flat = tf.reshape(h_pool1, [-1, 7*7*b1_dim[0]])
+    h_pool1_flat = tf.reshape(h_pool1, [-1, output_img_dim * output_img_dim * b1_dim[0]])
     h_fc1 = tf.nn.relu(tf.matmul(h_pool1_flat, W_fc1) + b_fc1)
 
     #dropout
