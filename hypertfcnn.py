@@ -107,8 +107,9 @@ def routine():
                 b_conv2_copy2.assign(b_conv2)
             
         
-    for i in range(3000,20000):
+    for i in range(5000,20000):
         batch = mnist.train.next_batch(50)
+        batch_validation=mnist.validation.next_batch(50)
         if i%1000 == 0:
             train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
             training_accuracy_queue.append(train_accuracy)
