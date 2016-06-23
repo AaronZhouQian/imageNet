@@ -135,7 +135,7 @@ def routine():
             print("step %d, training accuracy %g"%(i, train_accuracy))
             print("step %d, validation accuracy %g"% (i,validation_accuracy))
             
-            if training_accuracy_queue[0]==max(training_accuracy_queue):
+            if training_accuracy_queue[0]==max(training_accuracy_queue) and i >10000:
                 W_conv1.assign(W_conv1_copy1)
                 b_conv1.assign(b_conv1_copy1)
                 W_conv2.assign(W_conv2_copy1)
