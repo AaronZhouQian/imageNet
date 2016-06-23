@@ -113,6 +113,7 @@ def routine():
         
     for i in range(5000,20000):
         batch = mnist.train.next_batch(50)
+        train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
         if i%1000 == 0:
             batch_validation=mnist.validation.next_batch(50)
             train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
@@ -131,6 +132,9 @@ def routine():
             W_conv2_copy2.assign(W_conv2)
             b_conv2_copy2.assign(b_conv2)
                 
+            print("step %d, training accuracy %g"%(i, train_accuracy))
+            print("step %d, validation accuracy %g"% (i,validation_accuracy))
+            
             if training_accuracy_queue[0]==max(training_accuracy_queue):
                 W_conv1.assign(W_conv1_copy1)
                 b_conv1.assign(b_conv1_copy1)
@@ -138,11 +142,6 @@ def routine():
                 b_conv2.assign(b_conv2_copy1)
                 break
             
-            print("step %d, training accuracy %g"%(i, train_accuracy))
-            print("step %d, validation accuracy %g"% (i,validation_accuracy))
-            
-        train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
-
     print("test accuracy %g"%accuracy.eval(feed_dict={
         x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
 
