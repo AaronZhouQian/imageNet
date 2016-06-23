@@ -89,10 +89,14 @@ def routine():
     training_accuracy_queue=deque()
     for i in range(3000):
         batch = mnist.train.next_batch(50)
+        train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
         if i%1000 == 0:
+            batch_validation=mnist.validation.next_batch(50)
             train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
-            training_accuracy_queue.append(train_accuracy)
+            validation_accuracy=accuracy.eval(feed_dict={x:batch_validation[0],y_:batch_validation[1],keep_prob:1.0})
+            training_accuracy_queue.append(validation_accuracy)
             print("step %d, training accuracy %g"%(i, train_accuracy))
+            print("step %d, validation accuracy %g"% (i,validation_accuracy))
             
             if i==0:
                 W_conv1_copy1.assign(W_conv1)
@@ -109,8 +113,8 @@ def routine():
         
     for i in range(5000,20000):
         batch = mnist.train.next_batch(50)
-        batch_validation=mnist.validation.next_batch(50)
         if i%1000 == 0:
+            batch_validation=mnist.validation.next_batch(50)
             train_accuracy = accuracy.eval(feed_dict={x:batch[0], y_: batch[1], keep_prob: 1.0})
             validation_accuracy=accuracy.eval(feed_dict={x:batch_validation[0],y_:batch_validation[1],keep_prob:1.0})
             
