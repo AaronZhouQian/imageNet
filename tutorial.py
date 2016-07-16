@@ -18,7 +18,7 @@ y=tf.nn.softmax(tf.matmul(x,W)+b)
 cross_entropy=tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y),reduction_indices=[1]))
 train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 
-for i in range(1000):
+for i in range(100000):
   batch = mnist.train.next_batch(50)
   train_step.run(feed_dict={x: batch[0], y_: batch[1]})
   
